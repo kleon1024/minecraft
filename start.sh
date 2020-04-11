@@ -11,7 +11,6 @@ ssh-copy-id ubuntu@172.17.0.2
 
 rsync -avP ubuntu@172.17.0.2:~/minecraft ~
 
-cd minecraft
 sudo docker-compose -f mc-compose.yaml up -d
 
 
