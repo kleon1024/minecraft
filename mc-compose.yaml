@@ -1,0 +1,20 @@
+version: '3'
+services:
+  mc:
+    ports:
+      - "25565:25565"
+      - "8123:8123"
+      - "8804:8804"
+    environment:
+      EULA: "TRUE"
+      VERSION: "1.14.4"
+      UID: "1001"
+      GID: "1001"
+    image: itzg/minecraft-server:latest
+    container_name: mc
+    tty: true
+    stdin_open: true
+    restart: always
+    volumes:
+      - /home/minecraft/data:/data
+
