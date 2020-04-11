@@ -16,5 +16,5 @@ services:
     stdin_open: true
     restart: always
     volumes:
-      - /home/minecraft/data:/data
+      - /home/ubuntu/minecraft/data:/data
 
